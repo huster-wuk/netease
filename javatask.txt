@@ -59,6 +59,8 @@ class CasinoOL //赌场类 存放玩家和庄家对象
 			}
 			Poker pok = getpok(getnub(), getclr()); //生成一个扑克对象
 			
+			System.out.println("OK");
+			
 			//记录牌值，判断是否是"J" "Q" "K" "A"
 			int tmp = pok.nub();
 			if(tmp == 1)
@@ -68,9 +70,7 @@ class CasinoOL //赌场类 存放玩家和庄家对象
 					player += 1;
 				else
 					player += 1;
-				System.out.println("OK");
 				System.out.println("You got a : " + pok.color() + " " + "A");
-				System.out.println("");
 			}
 			else if(tmp > 10)
 			{
@@ -78,9 +78,7 @@ class CasinoOL //赌场类 存放玩家和庄家对象
 					player += 10;
 				else
 					banker += 10;
-				System.out.println("OK");
 				System.out.println("You got a : " + pok.color() + " " + translate(tmp));
-				System.out.println("");
 			}
 			else
 			{
@@ -88,9 +86,7 @@ class CasinoOL //赌场类 存放玩家和庄家对象
 					player += tmp;
 				else
 					banker += tmp;
-				System.out.println("OK");
 				System.out.println("You got a : " + pok.color() + " " + pok.nub());
-				System.out.println("");
 			}
 			
 			//爆牌判定
@@ -104,12 +100,17 @@ class CasinoOL //赌场类 存放玩家和庄家对象
 				System.out.println("You win");
 				System.exit(0);
 			}
+			
+			System.out.println("");
+			
 			choice = in.next();
 		}
 		
 		if(choice.equals("n"))
 			System.out.println("Not bad");
+			
 		addup(existA, k);
+		
 		if(choice.equals("q"))
 		{
 			System.out.println("Bye");

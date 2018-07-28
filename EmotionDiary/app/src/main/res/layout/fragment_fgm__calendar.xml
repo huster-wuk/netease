@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip" >
+
+            <TableRow>
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/sunday"
+                    android:textColor="@color/canlendar_text_color" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/monday"
+                    android:textColor="@color/canlendar_text_color" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thesday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/wednesday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thursday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/friday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/saturday"
+                    android:textColor="@color/canlendar_text_color" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_calendar"
+            android:layout_width="match_parent"
+            android:paddingStart="6dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:background="@color/white">
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#ffffff">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvHint"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:text="都经历了这样的一个月，以后有什么都不在怕的！"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnAddDiary"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/add" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

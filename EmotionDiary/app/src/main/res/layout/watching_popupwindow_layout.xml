@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5035a0d4">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="75dp"/>
+
+    <LinearLayout
+        android:id="@+id/watching_pop_Linear_View"
+        android:layout_width="290dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@drawable/corners_bg"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/watching_pop_year_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2018"
+                android:textColor="#111"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/watching_pop_exit2_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:background="@drawable/watchingexit" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/watching_pop_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="7 "
+                android:textColor="#009fcc"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="/"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/watching_pop_day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="22"
+                android:textColor="#009fcc"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/watching_pop_emotionView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/emotionhappy" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/watching_pop_content_text"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="我不是拽!是愤怒! "
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#ddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#ddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#ddd" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/watching_pop_share_button"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/share" />
+    </LinearLayout>
+</LinearLayout>

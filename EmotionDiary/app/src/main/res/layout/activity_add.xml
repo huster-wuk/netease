@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0102"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <View
+            android:layout_width="25dp"
+            android:layout_height="50dp"/>
+        <ImageButton
+            android:id="@+id/exit_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/left"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/setting"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DDD"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <TextView
+        android:id="@+id/year_text"
+        android:text="2018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#999999"
+        android:layout_gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/month_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#009fcc"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text=" / "
+            android:textColor="#666"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/day_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#009fcc"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:text="选择今天心情"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/Veryhappy_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emotionecstasy"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/happy_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emotionhappy"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/calm_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emotionclam"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/angry_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emotionangry"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/sad_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emotionsad"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="220dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="写点什么吧"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/content_exit"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="十个字以内"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:maxLength="12"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:layout_width="294dp"
+                android:layout_height="2dp"
+                android:background="#666666"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="294dp"
+                android:layout_height="2dp"
+                android:background="#666666"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <ImageButton
+        android:id="@+id/finish_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/addfinish"/>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="canlendar_text_color">#323232</color>
+    <color name="colorDark">#666666</color>
+    <color name="sad">#666666</color>
+    <color name="calm">#FFBB00</color>
+    <color name="happy">#00AAAA</color>
+    <color name="veryhappy">#009fcc</color>
+    <color name="angry">#ff3333</color>
+</resources>
